@@ -1,0 +1,11 @@
+C:\Users\Eric\OneDrive\FahrzeugVerwaltung\fvlib\bin\Debug\net5.0\fvlib.deps.json
+C:\Users\Eric\OneDrive\FahrzeugVerwaltung\fvlib\bin\Debug\net5.0\fvlib.dll
+C:\Users\Eric\OneDrive\FahrzeugVerwaltung\fvlib\bin\Debug\net5.0\ref\fvlib.dll
+C:\Users\Eric\OneDrive\FahrzeugVerwaltung\fvlib\bin\Debug\net5.0\fvlib.pdb
+C:\Users\Eric\OneDrive\FahrzeugVerwaltung\fvlib\obj\Debug\net5.0\fvlib.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Eric\OneDrive\FahrzeugVerwaltung\fvlib\obj\Debug\net5.0\fvlib.AssemblyInfoInputs.cache
+C:\Users\Eric\OneDrive\FahrzeugVerwaltung\fvlib\obj\Debug\net5.0\fvlib.AssemblyInfo.cs
+C:\Users\Eric\OneDrive\FahrzeugVerwaltung\fvlib\obj\Debug\net5.0\fvlib.csproj.CoreCompileInputs.cache
+C:\Users\Eric\OneDrive\FahrzeugVerwaltung\fvlib\obj\Debug\net5.0\fvlib.dll
+C:\Users\Eric\OneDrive\FahrzeugVerwaltung\fvlib\obj\Debug\net5.0\ref\fvlib.dll
+C:\Users\Eric\OneDrive\FahrzeugVerwaltung\fvlib\obj\Debug\net5.0\fvlib.pdb

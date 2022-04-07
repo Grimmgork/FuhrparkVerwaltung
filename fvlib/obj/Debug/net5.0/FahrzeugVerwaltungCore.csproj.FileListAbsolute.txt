@@ -1,0 +1,11 @@
+C:\Users\Eric\OneDrive\FahrzeugVerwaltung\FahrzeugVerwaltungCore\bin\Debug\net5.0\FahrzeugVerwaltungCore.deps.json
+C:\Users\Eric\OneDrive\FahrzeugVerwaltung\FahrzeugVerwaltungCore\bin\Debug\net5.0\FahrzeugVerwaltungCore.dll
+C:\Users\Eric\OneDrive\FahrzeugVerwaltung\FahrzeugVerwaltungCore\bin\Debug\net5.0\ref\FahrzeugVerwaltungCore.dll
+C:\Users\Eric\OneDrive\FahrzeugVerwaltung\FahrzeugVerwaltungCore\bin\Debug\net5.0\FahrzeugVerwaltungCore.pdb
+C:\Users\Eric\OneDrive\FahrzeugVerwaltung\FahrzeugVerwaltungCore\obj\Debug\net5.0\FahrzeugVerwaltungCore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Eric\OneDrive\FahrzeugVerwaltung\FahrzeugVerwaltungCore\obj\Debug\net5.0\FahrzeugVerwaltungCore.AssemblyInfoInputs.cache
+C:\Users\Eric\OneDrive\FahrzeugVerwaltung\FahrzeugVerwaltungCore\obj\Debug\net5.0\FahrzeugVerwaltungCore.AssemblyInfo.cs
+C:\Users\Eric\OneDrive\FahrzeugVerwaltung\FahrzeugVerwaltungCore\obj\Debug\net5.0\FahrzeugVerwaltungCore.csproj.CoreCompileInputs.cache
+C:\Users\Eric\OneDrive\FahrzeugVerwaltung\FahrzeugVerwaltungCore\obj\Debug\net5.0\FahrzeugVerwaltungCore.dll
+C:\Users\Eric\OneDrive\FahrzeugVerwaltung\FahrzeugVerwaltungCore\obj\Debug\net5.0\ref\FahrzeugVerwaltungCore.dll
+C:\Users\Eric\OneDrive\FahrzeugVerwaltung\FahrzeugVerwaltungCore\obj\Debug\net5.0\FahrzeugVerwaltungCore.pdb

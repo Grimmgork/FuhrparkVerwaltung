@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "GqS65k+arEv71wRg1S36ObfLi1RKW11jkIhHlozgB3f3mJnMlNq5O/txQtuy4uaCNGyl6QXtftiYn7V1PwYS8A==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Eric\\OneDrive\\FahrzeugVerwaltung\\fvlib\\fvlib.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Eric\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\Eric\\.nuget\\packages\\stub.system.data.sqlite.core.netstandard\\1.0.115.5\\stub.system.data.sqlite.core.netstandard.1.0.115.5.nupkg.sha512",
+    "C:\\Users\\Eric\\.nuget\\packages\\system.data.sqlite.core\\1.0.115.5\\system.data.sqlite.core.1.0.115.5.nupkg.sha512"
+  ],
+  "logs": []
+}

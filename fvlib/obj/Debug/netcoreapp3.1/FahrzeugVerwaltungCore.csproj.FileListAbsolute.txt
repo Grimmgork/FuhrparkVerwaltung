@@ -1,0 +1,16 @@
+C:\Users\Eric\OneDrive\FahrzeugVerwaltung\FahrzeugVerwaltung\bin\Debug\netcoreapp3.1\FahrzeugVerwaltungCore.deps.json
+C:\Users\Eric\OneDrive\FahrzeugVerwaltung\FahrzeugVerwaltung\bin\Debug\netcoreapp3.1\FahrzeugVerwaltungCore.dll
+C:\Users\Eric\OneDrive\FahrzeugVerwaltung\FahrzeugVerwaltung\bin\Debug\netcoreapp3.1\FahrzeugVerwaltungCore.pdb
+C:\Users\Eric\OneDrive\FahrzeugVerwaltung\FahrzeugVerwaltung\obj\Debug\netcoreapp3.1\FahrzeugVerwaltungCore.AssemblyInfoInputs.cache
+C:\Users\Eric\OneDrive\FahrzeugVerwaltung\FahrzeugVerwaltung\obj\Debug\netcoreapp3.1\FahrzeugVerwaltungCore.AssemblyInfo.cs
+C:\Users\Eric\OneDrive\FahrzeugVerwaltung\FahrzeugVerwaltung\obj\Debug\netcoreapp3.1\FahrzeugVerwaltungCore.csproj.CoreCompileInputs.cache
+C:\Users\Eric\OneDrive\FahrzeugVerwaltung\FahrzeugVerwaltung\obj\Debug\netcoreapp3.1\FahrzeugVerwaltungCore.dll
+C:\Users\Eric\OneDrive\FahrzeugVerwaltung\FahrzeugVerwaltung\obj\Debug\netcoreapp3.1\FahrzeugVerwaltungCore.pdb
+C:\Users\Eric\OneDrive\FahrzeugVerwaltung\FahrzeugVerwaltungCore\bin\Debug\netcoreapp3.1\FahrzeugVerwaltungCore.deps.json
+C:\Users\Eric\OneDrive\FahrzeugVerwaltung\FahrzeugVerwaltungCore\bin\Debug\netcoreapp3.1\FahrzeugVerwaltungCore.dll
+C:\Users\Eric\OneDrive\FahrzeugVerwaltung\FahrzeugVerwaltungCore\bin\Debug\netcoreapp3.1\FahrzeugVerwaltungCore.pdb
+C:\Users\Eric\OneDrive\FahrzeugVerwaltung\FahrzeugVerwaltungCore\obj\Debug\netcoreapp3.1\FahrzeugVerwaltungCore.AssemblyInfoInputs.cache
+C:\Users\Eric\OneDrive\FahrzeugVerwaltung\FahrzeugVerwaltungCore\obj\Debug\netcoreapp3.1\FahrzeugVerwaltungCore.AssemblyInfo.cs
+C:\Users\Eric\OneDrive\FahrzeugVerwaltung\FahrzeugVerwaltungCore\obj\Debug\netcoreapp3.1\FahrzeugVerwaltungCore.csproj.CoreCompileInputs.cache
+C:\Users\Eric\OneDrive\FahrzeugVerwaltung\FahrzeugVerwaltungCore\obj\Debug\netcoreapp3.1\FahrzeugVerwaltungCore.dll
+C:\Users\Eric\OneDrive\FahrzeugVerwaltung\FahrzeugVerwaltungCore\obj\Debug\netcoreapp3.1\FahrzeugVerwaltungCore.pdb

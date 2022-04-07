@@ -1,23 +1,31 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+
 using fvlib;
 using fvlib.Databases.Json;
 using fvlib.Models;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
-using System.IO;
-using System.Reflection;
 
 namespace fvcli
 {
 	class Program
 	{
 		static FuhrparkVerwaltung fuhrparkVerwaltung;
+		static PropertyMap<string> vehicleView;
 
 		static void Main(string[] args)
 		{
+			vehicleView = new PropertyMap<string>();
+			vehicleView.RegisterProperty(typeof(Fahrzeug), "InterneKennung", "Interne Kennung");
+			vehicleView.RegisterProperty(typeof(Fahrzeug), "Verbrauch", "Verbrauch");
+			vehicleView.RegisterProperty(typeof(Fahrzeug), "Länge", "Länge");
+			vehicleView.RegisterProperty(typeof(Fahrzeug), "Breite", "Breite");
+			vehicleView.RegisterProperty(typeof(Fahrzeug), "Kennzeichnung", "Kennzeichnung");
+			vehicleView.RegisterProperty(typeof(Auto), "Plätze", "Plätze");
+			vehicleView.RegisterProperty(typeof(Lastkraftwagen), "Ladekapazität", "Ladekapazität");
+			vehicleView.RegisterProperty(typeof(Gabelstapler), "Hublast", "Hublast");
+			vehicleView.RegisterProperty(typeof(Hubwagen), "IstElektrisch", "Elektrisch?");
+
 			fuhrparkVerwaltung = new FuhrparkVerwaltung(new JsonVehicleDatabase(@"c:\users\eric\desktop\database.json"));
 
 			try{
@@ -83,16 +91,15 @@ namespace fvcli
 
 		static void AllCommand(string[] args)
 		{
-			Type type = null;
-			if (args.Length > 0) {
-				type = FindType(args[0]);
-			}
-
 			List<Fahrzeug> result;
-			if (type == null)
-				result = fuhrparkVerwaltung.All();
-			else
+			if (args.Length > 0){
+				string typeName = args[0];
+				Type type = GetVehicleType(typeName);
 				result = fuhrparkVerwaltung.AllByType(type);
+			}
+			else{
+				result = fuhrparkVerwaltung.All();
+			}
 			
 			foreach(Fahrzeug f in result){
 				Console.WriteLine("-");
@@ -102,8 +109,8 @@ namespace fvcli
 
 		static void CreateCommand(string[] args)
 		{
-			string typeRef = args[0].ToLower();
-			Fahrzeug fahrzeug = (Fahrzeug) Activator.CreateInstance(FindType(typeRef));
+			string typeName = args[0];
+			Fahrzeug fahrzeug = (Fahrzeug) Activator.CreateInstance(GetVehicleType(typeName));
 			Console.WriteLine(fuhrparkVerwaltung.Insert(fahrzeug));
 		}
 
@@ -117,29 +124,28 @@ namespace fvcli
 				return;
 			}
 
-			string fieldName = args[1];
+			int fieldNumber = int.Parse(args[1]);
 			string value = args[2];
 
-			PropertyInfo p = fahrzeug.GetType().GetProperty(fieldName);
-			p.SetValue(fahrzeug, Convert.ChangeType(value, p.PropertyType));
+			Property<string> property = vehicleView.GetProperties(fahrzeug.GetType())[fieldNumber-1];
+			property.SetValue(fahrzeug, Convert.ChangeType(value, property.PropertyType));
 			fuhrparkVerwaltung.Update(fahrzeug);
 
 			Console.WriteLine(RenderVehicle(fahrzeug));
 		}
 
-
-		static Type FindType(string typeRef)
+		static Type GetVehicleType(string typeName)
 		{
-			string typeRefLowerCase = typeRef.ToLower();
-			switch(typeRefLowerCase)
+			VehicleType type = (VehicleType) Enum.Parse(typeof(VehicleType), typeName, true);
+			switch(type)
 			{
-				case "auto":
+				case VehicleType.Auto:
 					return typeof(Auto);
-				case "gabelstapler":
+				case VehicleType.Gabelstapler:
 					return typeof(Gabelstapler);
-				case "lastkraftwagen":
+				case VehicleType.Lastkraftwagen:
 					return typeof(Lastkraftwagen);
-				case "hubwagen":
+				case VehicleType.Hubwagen:
 					return typeof(Hubwagen);
 			}
 			return null;
@@ -148,28 +154,20 @@ namespace fvcli
 		static string RenderVehicle(Fahrzeug f)
 		{
 			string result = $"Typ: {f.GetType().Name}\n";
-			result += $"Interne Kennung: {f.InterneKennung}\n";
-			result += $"Kennzeichnung: {f.Kennzeichnung}\n";
-			result += $"Länge: {f.Länge}\n";
-			result += $"Breite: {f.Breite}\n";
-			result += $"Verbrauch: {f.Verbrauch}\n";
-
-			switch(f){
-				case Auto:
-					result += $"Plätze: {(f as Auto).Plätze}\n";
-					break;
-				case Lastkraftwagen:
-					result += $"Ladekapazität: {(f as Lastkraftwagen).Ladekapazität}\n";
-					break;
-				case Gabelstapler:
-					result += $"Hublast: {(f as Gabelstapler).Hublast}\n";
-					break;
-				case Hubwagen:
-					result += $"Elektrisch?: {(f as Hubwagen).IstElektrisch}\n";
-					break;
+			Property<string>[] properties = vehicleView.GetProperties(f.GetType());
+			for(int i = 0; i < properties.Length; i++){
+				Property<string> property = properties[i];
+				result += $"{i + 1} {property.MetaData}: {property.GetValue(f)}\n";
 			}
-
 			return result;
 		}
+	}
+
+	public enum VehicleType
+	{
+		Gabelstapler,
+		Hubwagen,
+		Auto,
+		Lastkraftwagen
 	}
 }

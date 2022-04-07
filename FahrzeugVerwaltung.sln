@@ -7,8 +7,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "fvlib", "fvlib\fvlib.csproj
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "fvcli", "fvcli\fvcli.csproj", "{3DD7574A-D38C-4487-B1F0-F7CFBFE6B1A4}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "fvgui", "fvgui\fvgui.csproj", "{042A860A-D113-4AB7-B026-F2A8D804BA8A}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,10 +21,6 @@ Global
 		{3DD7574A-D38C-4487-B1F0-F7CFBFE6B1A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3DD7574A-D38C-4487-B1F0-F7CFBFE6B1A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3DD7574A-D38C-4487-B1F0-F7CFBFE6B1A4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{042A860A-D113-4AB7-B026-F2A8D804BA8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{042A860A-D113-4AB7-B026-F2A8D804BA8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{042A860A-D113-4AB7-B026-F2A8D804BA8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{042A860A-D113-4AB7-B026-F2A8D804BA8A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

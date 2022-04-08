@@ -9,3 +9,4 @@ C:\Users\Eric\OneDrive\FahrzeugVerwaltung\fvlib\obj\Debug\net5.0\fvlib.csproj.Co
 C:\Users\Eric\OneDrive\FahrzeugVerwaltung\fvlib\obj\Debug\net5.0\fvlib.dll
 C:\Users\Eric\OneDrive\FahrzeugVerwaltung\fvlib\obj\Debug\net5.0\ref\fvlib.dll
 C:\Users\Eric\OneDrive\FahrzeugVerwaltung\fvlib\obj\Debug\net5.0\fvlib.pdb
+C:\Users\Eric\OneDrive\FahrzeugVerwaltung\fvlib\obj\Debug\net5.0\fvlib.csproj.AssemblyReference.cache

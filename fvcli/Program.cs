@@ -85,7 +85,7 @@ namespace fvcli
 		static void RemoveCommand(string[] args)
 		{
 			string id = args[0];
-			fuhrparkVerwaltung.Delete(id);
+			fuhrparkVerwaltung.Remove(id);
 			Console.WriteLine($"Deleted {id}!");
 		}
 
@@ -95,10 +95,10 @@ namespace fvcli
 			if (args.Length > 0){
 				string typeName = args[0];
 				Type type = GetVehicleType(typeName);
-				result = fuhrparkVerwaltung.AllByType(type);
+				result = fuhrparkVerwaltung.GetAllByType(type);
 			}
 			else{
-				result = fuhrparkVerwaltung.All();
+				result = fuhrparkVerwaltung.GetAll();
 			}
 			
 			foreach(Fahrzeug f in result){

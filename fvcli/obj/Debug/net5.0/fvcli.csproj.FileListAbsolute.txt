@@ -1,4 +1,3 @@
-C:\Users\Eric\OneDrive\FahrzeugVerwaltung\FVCLI\obj\Debug\net5.0\fvcli.csprojAssemblyReference.cache
 C:\Users\Eric\OneDrive\FahrzeugVerwaltung\FVCLI\obj\Debug\net5.0\fvcli.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Eric\OneDrive\FahrzeugVerwaltung\FVCLI\obj\Debug\net5.0\fvcli.AssemblyInfoInputs.cache
 C:\Users\Eric\OneDrive\FahrzeugVerwaltung\FVCLI\obj\Debug\net5.0\fvcli.AssemblyInfo.cs
@@ -23,3 +22,4 @@ C:\Users\Eric\OneDrive\FahrzeugVerwaltung\FVCLI\obj\Debug\net5.0\fvcli.pdb
 C:\Users\Eric\OneDrive\FahrzeugVerwaltung\FVCLI\obj\Debug\net5.0\fvcli.genruntimeconfig.cache
 C:\Users\Eric\OneDrive\FahrzeugVerwaltung\fvcli\bin\Debug\net5.0\fvlib.dll
 C:\Users\Eric\OneDrive\FahrzeugVerwaltung\fvcli\bin\Debug\net5.0\fvlib.pdb
+C:\Users\Eric\OneDrive\FahrzeugVerwaltung\fvcli\obj\Debug\net5.0\fvcli.csproj.AssemblyReference.cache
